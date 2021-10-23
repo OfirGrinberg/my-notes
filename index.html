@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task Board</title>
+		<script
+			src="https://kit.fontawesome.com/49cf0481ac.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js" defer></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="top">
+			<h1>My Task Board</h1>
+			<div class="form">
+				<textarea
+					class="textarea"
+					placeholder="Write task here:"
+				></textarea>
+				<div class="btn">
+					<input type="date" id="date" />
+					<input type="button" value="Save" id="btn-save" />
+					<input type="button" value="Clear" id="btn-clear" />
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul></ul>
+		</div>
+	</body>
+</html>

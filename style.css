@@ -1,0 +1,227 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  background-image: url(images/tile.jpg);
+  background-size: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  position: relative;
+  font-family: 'Lobster', cursive;
+}
+
+.top h1 {
+  height: 60px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+}
+
+.top .form {
+  max-width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .form textarea {
+  height: 125px;
+  width: 800px;
+  resize: none;
+  border: 0;
+  border-radius: 10px;
+  margin: 0;
+  padding: 25px 0px 25px 117px;
+  background: url(images/formbg.jpg) repeat-y;
+  background-size: contain;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.top input[type='date'] {
+  background-color: tomato;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 25px;
+  margin: 10px 2px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.top input[type='button'],
+.top input[type='button'] {
+  background-color: royalblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 30px;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+}
+
+.footer ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer ul .fade-in {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.footer ul .fade-out {
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.footer ul .note-item {
+  width: 250px;
+  height: 350px;
+  padding: 35px 20px 10px 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% 55% 25%;
+      grid-template-rows: 20% 55% 25%;
+  background: url(images/notebg.png) no-repeat;
+  background-size: 300px 350px;
+}
+
+.footer ul .note-item .note-header {
+  font-size: 1.5rem;
+}
+
+.footer ul .note-item .note-header .icon {
+  display: none;
+}
+
+.footer ul .note-item .note-main {
+  overflow: auto;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: initial;
+  font-size: 1.5rem;
+}
+
+.footer ul .note-item .note-main::-webkit-scrollbar {
+  width: 15px;
+}
+
+.footer ul .note-item .note-main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.footer ul .note-item .note-main::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0.5);
+  border-radius: 10px;
+}
+
+.footer ul .note-item .note-footer {
+  padding-top: 15px;
+}
+
+.footer ul .note-item:hover .icon {
+  display: block;
+}
+
+.footer ul .note-item:hover .icon i {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
